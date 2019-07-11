@@ -1,3 +1,4 @@
+// Computer Selection 
 function computerPlay(){
     let number = Math.floor(Math.random() * 100);
     let result;
@@ -9,10 +10,10 @@ function computerPlay(){
         result = 'Scissors';
     }
      //console.log('Computer choose ' + result);
-     
      return result; // Return rock, paper or scissors
 }
 
+// Play a single round
 function playRound(playerSelection, computerSelection) {
     // your code here!
     let finalMessage;
@@ -59,15 +60,17 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
     let gameWinner;
+    let playing = true;
+
 
 
     while (playerScore < 3 && computerScore <3) {
         let computer = computerPlay();
+        //let player = userPlay();
 
         let player = prompt('Rock, Paper or Scissors???');
         //console.log('Player selected ' + player);
         
-
         let roundWinner = playRound(player, computer);
 
         if (roundWinner == 1) {
@@ -75,6 +78,10 @@ function game() {
         } else if ( roundWinner == 2){
             computerScore +=1;
         }
+
+        document.getElementById('computer-score').innerHTML = computerScore;
+        document.getElementById('player-score').innerHTML = playerScore;
+        
 
         if (playerScore == 3) {
             gameWinner = 'Player';
@@ -84,5 +91,13 @@ function game() {
         }
 
         alert(gameWinner + ' is the Winner');
+
+        document.getElementById('computer-score').innerHTML = 0;
+        document.getElementById('player-score').innerHTML = 0;
+        playing = false;
+
         return gameWinner;
+
+        
+
       }

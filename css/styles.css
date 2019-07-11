@@ -1,0 +1,55 @@
+body{
+    font-family: 'Russo One', sans-serif;
+}
+.game-title {
+    text-align: center;
+
+}
+.game-title h1 {
+    font-size: 50px;
+}
+
+.game-buttons {
+    text-align: center;
+    margin-top : 60px;
+    margin-bottom : 60px;
+}
+
+.game-buttons a{
+    width: 180px;
+    padding: 20px;
+}
+
+.game-buttons img{
+    border:2px dashed black;
+}
+
+.game-buttons img:hover{
+    border:2px solid rgb(15, 211, 15);
+}
+
+.play-now-link {
+    font-size: 40px;
+    color: rgb(15, 211, 15);
+    
+}
+
+.image-button {
+    width: 140px;
+    height: 140px;
+}
+
+.score h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.score p {
+    text-align: center;
+    
+}
+
+.score span {
+    font-size: 20px;
+}
+

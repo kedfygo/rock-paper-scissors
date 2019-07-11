@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script language="JavaScript" type="text/javascript" src="/js/scripts.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet"> 
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <h1>Rock - Paper - Scissors</h1>
+    <div class="game-title">
+            <h1>Rock - Paper - Scissors</h1>
+            <p>Hope you enjoy it!!!</p>
+            <p><a class="play-now-link" onclick="game()" href="#">PLAY NOW</a></p>           
+    </div>
 
-
-
+    <div class="game-buttons">
+        <a id="rock" href="#"><img class="image-button"  src="/img/rock.JPG" alt="Rock"></a>
+        <a id="paper" href="#"><img class="image-button"  src="/img/paper.JPG" alt="Paper"></a>
+        <a id="scissors" href="#"><img class="image-button"  src="/img/scissors.JPG" alt="Scissors"></a>
+    </div>
     
+    <div class="score">
+        <h2>Scores</h2>
+        <p >Computer Score: <span id="computer-score"></span></p>
+        <p >Your Score: <span id="player-score"></span></p>
+    </div>
+
 </body>
 </html>

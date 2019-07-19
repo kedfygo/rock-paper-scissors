@@ -1,3 +1,7 @@
+:root {
+    --main-green-color:rgb(15, 211, 15);
+  }
+
 body{
     font-family: 'Russo One', sans-serif;
 }
@@ -9,31 +13,49 @@ body{
     font-size: 50px;
 }
 
-.game-buttons {
+#game-buttons {
     text-align: center;
     margin-top : 60px;
     margin-bottom : 60px;
 }
 
-.game-buttons a{
+#game-buttons a{
     width: 180px;
     padding: 20px;
 }
 
-.game-buttons img{
+#game-buttons img{
     border:2px dashed black;
 }
 
-.game-buttons img:hover{
+#game-buttons img:hover{
     border:2px solid rgb(15, 211, 15);
 }
 
 .play-now-link {
     font-size: 40px;
     color: rgb(15, 211, 15);
-    
+
 }
 
+.winner-message {
+    font-size: 40px;
+    color: rgb(15, 211, 15);
+    text-align: center;
+}
+
+.loser-message {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+.try-again-message {
+    font-size: 40px;
+    color: yellow;
+    text-align: center;
+
+}
 .image-button {
     width: 140px;
     height: 140px;
